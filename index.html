@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,400,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>FOODMAP</title>
+</head>
+<body>
+  <div class="container-fluid" id="one-section">   <!--Splash-->
+    <div class="row d-flex align-items-center text-center" id="splash">
+      <div class="col-12 background">
+        <p class="text-center logo">Foodmap</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="two-section">   <!--Vista Principal-->
+    <div class="row d-flex align-items-center text-center" id="logo">
+      <div class="col-12 ">
+        <div>
+          <h1 class="title marginTop"> Foodmap </h1>
+        </div>
+        <img class="tam marginTop" src="assets/img/deco-1.png" alt="img">
+        <hr size=4 color=white width=49%> </hr>
+
+        <div class="mapa marginTop">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30823518.103863068!2d-99.1501876691871!3d19.428106152332774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1515686884649"  frameborder="1" style="border:0" allowfullscreen id=""> </iframe>
+        </div>
+        <h2 class="title marginTop" > Comida cerca de ti </h2>
+        <div class="row">
+          <div class="col-4 offset-7 d-flex center align-items-center">
+            <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">filtrar restaurantes <i class="glyphicon glyphicon-search"></button> Button filtrar -->
+            <div class="input-group mb-3 center">      <!--filtrar -->
+              <div class="input-group-prepend center">
+                <!--<input type="text" class="form-control center" id="searcher" placeholder="filtrar resturantes" data-toggle="modal" data-target="#myModal" <i class="glyphicon glyphicon-search">  modal **id search-->
+                <input type="text" class="form-control" placeholder="Buscador Restaurantes" id="searcher">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="foods-cont">
+          <div class="col-4 offset-7 d-flex align-items-center">
+            <p class=" marginTop color" > Cuál se te antoja? </p>
+            <img data-toggle="modal" data-target="#myModal" src="assets/img/food.png" alt="img">
+          </div>
+        </div>
+      </div>
+      <section class="container" id="select-option">
+      </section>
+    </div>
+  </div>
+</div>
+</div> <!-- cierre -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Map Food</h4>
+      </div>
+      <div class="modal-body">
+          <p>¿qué se te antoja comer hoy?</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7525.7649610089065!2d-99.16465562526328!3d19.417482997571636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1516579061346" frameborder="0" style="border:0" allowfullscreen></iframe><br></br>
+        <p>Elije los mejoresRestaurantes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div> <!--cierre Vista Princial -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--enlace de CDN-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>  <!--enlace descargado de jquery-->
+<script src="js/appjq.js"></script>
+</body>
+</html>
